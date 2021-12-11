@@ -40,6 +40,4 @@ if __name__ == '__main__':
 
     place_img(final_img, label_area_size, label_area_size, processed_img)
 
-    cv2.imshow('Module4', final_img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    cv2.imwrite(os.getcwd() + '/img/Mod4CT1_processed.jpeg', final_img)
