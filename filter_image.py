@@ -31,7 +31,7 @@ if __name__ == '__main__':
     final_img = np.zeros(
         (h+label_area_size, w+label_area_size, orig_d), np.uint8)
     font = cv2.FONT_HERSHEY_SIMPLEX
-    for key, value in enumerate(["Mean Filter", "Median Filter", "Gaussian Filter (0)", "Gaussian Filter (0)"]):
+    for key, value in enumerate(["Mean Filter", "Median Filter", "Gaussian Filter (0)", "Gaussian Filter (2)"]):
         cv2.putText(final_img, value,
                     (key*orig_w+label_area_size, int(label_area_size/2)),  font, .6, (255, 255, 255))
     for key, value in enumerate([3, 5, 7]):
